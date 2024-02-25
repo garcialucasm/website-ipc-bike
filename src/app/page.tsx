@@ -5,26 +5,37 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScVMcb64zo40oHOvnjtm2sT7N8sNCRJpY4e1EPDuo8Hz5iLSg/viewform?usp=sf_link"
+          href="https://github.com/garcialucasm/ipc-alumni-bike"
           target="_blank"
           rel="noopener noreferrer"
         >
           <p className="fixed left-0 top-0 flex w-full justify-center border-b bg-gradient-to-b pb-6 pt-8 backdrop-blur-2xl border-neutral-800 bg-zinc-800/30 from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:bg-zinc-800/30 hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30">
-            Help us by giving your feedback 👉
+            Github project 👉
             <code className="font-mono font-bold text-blue-500 ps-1">
-              Form link
+              github/ipc-alumni-bike
             </code>
           </p>
         </a>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
+          <div
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
             rel="noopener noreferrer"
           >
-            By <span>Lucas</span> & <span>Felipe</span>
-          </a>
+            By{" "}
+            <a
+              href="https://github.com/garcialucasm"
+              className="hover:text-blue-500"
+            >
+              <span className="font-bold">Lucas</span>
+            </a>
+            &
+            <a
+              href="https://github.com/felipedreis"
+              className="hover:text-blue-500"
+            >
+              <span className="font-bold">Felipe</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -32,33 +43,67 @@ export default function Home() {
         <Image
           className="relative drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/logo-ipc-alumni-bike-white.png"
-          alt="Next.js Logo"
+          alt="IPC Bike Logo"
           width={180}
           height={37}
           priority
         />
       </div>
 
+      <a
+        href="http://bikes.felipedu.art/"
+        className="group rounded-lg border border-transparent px-5 py-4 transition-colors  text-blue-200 hover:text-blue-500 hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <h2 className={`font-semibold`}>
+          Try now
+          <span className="ps-1 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            -&gt;
+          </span>
+        </h2>
+      </a>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScVMcb64zo40oHOvnjtm2sT7N8sNCRJpY4e1EPDuo8Hz5iLSg/viewform?usp=sf_link"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Github{" "}
+            Feedback Form{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about the project.
+          <p className={`m-0 max-w-[30ch] inline text-sm opacity-50`}>
+            Help us with your feedback using this Google form.
           </p>
+          <span className="ps-1">🚀</span>
         </a>
 
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScXNfkNSFDAaBfxreMgxxN5GcD58SIxPmGQher0-JtWq1u7Fw/viewform"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`text-2xl font-semibold`}>
+            Feedback Form{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className="mb-3 text-sm italic">(to send screenshots)</p>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 inline`}>
+            To send us screenshots, please use this form instead.
+          </p>
+          <span className="ps-1">🖼️</span>
+        </a>
+
+        <a
+          href="/planning"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
@@ -69,43 +114,30 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            See the next features being developed.
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 inline`}>
+            See the next features in the queue for development.
           </p>
+          <span className="ps-1">⚙️</span>
         </a>
 
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://github.com/garcialucasm"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Feedback{" "}
+            Get in touch{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Give us your feedback using this Google form.
+          <p
+            className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance inline`}
+          >
+            Please feel free to contact us.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-          Get in touch{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-          Please feel free to contact us.
-          </p>
+          <span className="ps-1">😊</span>
         </a>
       </div>
     </main>
