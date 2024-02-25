@@ -44,8 +44,8 @@ export default function Home() {
           className="relative drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="/logo-ipc-alumni-bike-white.png"
           alt="IPC Bike Logo"
-          width={180}
-          height={37}
+          width={220}
+          height={74}
           priority
         />
       </div>
@@ -121,7 +121,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://github.com/garcialucasm"
+          href="/contacts"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:bg-gray-100 hover:border-neutral-700 hover:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
